@@ -10,11 +10,14 @@ import chess.ChessPosition;
 public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+
 		Position pos = new Position(3, 5);
 
 		ChessMatch chessMath = new ChessMatch();
 
 		while (true) {
+
+			UI.clearScreen();
 			UI.printBoard(chessMath.getPieces());
 			System.out.println();
 			System.out.print("Source: ");
